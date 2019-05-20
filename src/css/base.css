@@ -1,0 +1,66 @@
+:root {
+  --color-text: #222;
+  --color-navbar-bg: #101111;
+  --color-navbar-bg-focus: #000;
+  --color-navbar-text: #cfdce5;
+  --color-secondary: #032d38;
+  --font-family-sans: 'Sailec', sans-serif;
+  --font-family-mono: 'Roboto Mono', monospace;
+  --navbar-height: 2.75rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family-sans);
+  font-size: 1.1em;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1.1em;
+  }
+}
+
+body {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+kbd,
+pre {
+  font-family: var(--font-family-mono);
+}
+
+b,
+dt,
+strong,
+th {
+  font-weight: 500;
+}
+
+/* h1, h2, h3, h4, h5, h6, .navigation, .toolbar, .navbar  {
+  font-family: 'Sailec'
+} */
