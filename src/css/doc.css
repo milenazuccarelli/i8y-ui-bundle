@@ -1,13 +1,8 @@
-:root {
-  --document-width-medium: 85%;
-  --document-width-large: 80%;
-}
-
 .doc {
   margin: 0 auto;
   max-width: var(--document-width-medium);
   padding: 0 1rem 4rem;
-  color: #333;
+  color: var(--color-dark);
 }
 
 .home .doc {
@@ -23,7 +18,7 @@
 
 .doc .toc {
   border-radius: 5px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--color-light-shade);
   padding: 1em;
 }
 
@@ -33,14 +28,11 @@
 .doc h4,
 .doc h5,
 .doc h6 {
-  color: #191919;
-  font-weight: 600;
+  font-family: var(--font-family-display);
+  color: var(--color-secondary);
+  font-weight: 700;
   line-height: 1.3;
-  margin: 1rem 0 0;
-}
-
-.doc h3 {
-  font-weight: 500;
+  margin: 2rem 0 0;
 }
 
 .doc h1 > a.anchor,
@@ -79,11 +71,11 @@
 
 .doc a,
 .doc a:visited {
-  color: #00a0c3;
+  color: var(--color-link);
 }
 
 .doc a:hover {
-  color: #016a81;
+  color: var(--color-link-hover);
 }
 
 .doc i.fa {
@@ -93,14 +85,12 @@
 /* what about td/th code? */
 .doc p code {
   font-size: 0.9em;
-  background-color: #e8e8e8;
+  background-color: var(--color-bg-light-shade);
   padding: 0.075rem 0.25rem 0.125rem;
   border-radius: 0.2rem;
-  /* font-weight: 300; */
 }
 
 .doc pre {
-  /* color: #000; */
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;
@@ -285,7 +275,7 @@
 }
 
 .doc h2:not(.discrete) {
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid var(--color-light-shade);
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
@@ -301,14 +291,6 @@
 .doc .content {
   hyphens: auto;
 }
-
-/*
-.doc .ulist .paragraph,
-.doc .olist .paragraph {
-  margin: 0;
-  padding: 0;
-}
-*/
 
 #preamble .abstract blockquote {
   background-color: #f0f0f0;
@@ -368,11 +350,6 @@
   margin-top: 0.5rem;
 }
 
-/* .doc .olist li,
-.doc .ulist li {
-  margin-bottom: 0.5rem;
-} */
-
 .doc .ulist .listingblock,
 .doc .olist .listingblock,
 .doc .admonitionblock .listingblock {
@@ -384,7 +361,6 @@
 .doc .literalblock .title,
 .doc .listingblock .title,
 .doc .openblock .title {
-  /* color: #4a4a4a; */
   color: #191919;
   font-size: 0.925rem;
   font-style: italic;
@@ -396,9 +372,8 @@
   margin-top: 0;
 }
 
-/* Other possible colors #248232 (dark green) #2ba84a (brighter green), #f7ef99 (soft yellow), #f78e69 (orangey-grayish) */
 .doc .exampleblock > .content {
-  background-color: #fff;
+  background-color: var(--color-bg-light);
   padding: 0.75rem;
 }
 
@@ -520,7 +495,7 @@ b.button::after {
 kbd {
   display: inline-block;
   font-size: 0.7rem;
-  background-color: #fafafa;
+  background-color: var(--color-bg-light-tint);
   border: 1px solid #c1c1c1;
   border-radius: 0.25em;
   box-shadow: 0 1px 0 #c1c1c1, 0 0 0 0.1em #fff inset;
