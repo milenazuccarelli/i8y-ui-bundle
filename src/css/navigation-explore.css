@@ -1,6 +1,7 @@
 .navigation-explore {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .navigation-explore.is-active {

@@ -52,13 +52,31 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 1em;
-  /* border: 1px solid #ccc;
-  border-bottom: 2px solid #ccc; */
   -webkit-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
 }
 
-/* .card div {
-  padding: 0 1em;
-} */
+.solution {
+  background: url(../img/solution-explorer.png) no-repeat;
+  background-size: auto 100%;
+  margin: 4em auto 1em;
+  padding-left: 35%;
+  width: 80%;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .solution {
+    background-size: 100% auto;
+    padding-left: 0;
+    padding-top: 100%;
+  }
+}
+
+.card-title p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #032d38;
+  text-align: left;
+}

@@ -9,6 +9,7 @@ html.is-clipped--nav {
   flex-direction: column;
   /* help Chrome calculate the height correctly; must match .navigation value minus height of drawer */
   height: calc(100vh - var(--navbar-height) - var(--toolbar-height) - var(--drawer-height));
+  background-color: #fff;
 }
 
 @media screen and (min-width: 1024px) {

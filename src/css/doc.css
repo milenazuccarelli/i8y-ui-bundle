@@ -1,6 +1,11 @@
+:root {
+  --document-width-medium: 85%;
+  --document-width-large: 80%;
+}
+
 .doc {
   margin: 0 auto;
-  max-width: 85%;
+  max-width: var(--document-width-medium);
   padding: 0 1rem 4rem;
   color: #333;
 }
@@ -12,7 +17,7 @@
 @media screen and (min-width: 1024px) {
   .doc {
     margin: 0 2rem;
-    max-width: 80%;
+    max-width: var(--document-width-large);
   }
 }
 
@@ -88,7 +93,7 @@
 /* what about td/th code? */
 .doc p code {
   font-size: 0.9em;
-  background-color: #fafafa;
+  background-color: #e8e8e8;
   padding: 0.075rem 0.25rem 0.125rem;
   border-radius: 0.2rem;
   /* font-weight: 300; */

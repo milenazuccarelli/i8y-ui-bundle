@@ -2,7 +2,31 @@ footer.footer {
   font-size: 0.85rem;
   background-color: var(--color-navbar-bg);
   color: var(--color-navbar-text);
-  padding: 1rem;
+  padding: 3.5rem 1rem;
+}
+
+footer .wrap {
+  width: var(--document-width-medium);
+  padding-bottom: 4em;
+}
+
+footer .copyright {
+  width: var(--document-width-medium);
+  border-top: 1px solid #5d5d5d;
+  margin: 0 auto;
+  padding: 1em 0 0 0;
+  color: #5d5d5d;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .wrap {
+    width: var(--document-width-large);
+  }
+
+  footer .copyright {
+    width: var(--document-width-large);
+  }
 }
 
 .footer ul {
@@ -16,11 +40,26 @@ footer.footer {
 
 .footer div {
   flex: 1;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer div {
+    flex: 100%;
+  }
 }
 
 .footer .logo {
-  background: url(..images/Logo-RedHat-A-Reverse-RGB.svg);
+  background: url(../img/Logo-RedHat-A-Reverse-RGB.svg) no-repeat;
+  background-size: 30%;
   flex: 2;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 500px) {
+  .footer .logo {
+    background-size: 20%;
+    padding: 3em;
+  }
 }
 
 .footer h3 {
@@ -37,4 +76,22 @@ footer.footer {
 
 .footer a:hover {
   color: #5d5d5d;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  background: #1753de;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  height: 46px;
+  outline: none;
+  padding: 0.5em 2em;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.7);
 }

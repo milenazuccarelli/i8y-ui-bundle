@@ -15,10 +15,34 @@
   width: 100%;
 }
 
-.banner h1 {
+.banner h1,
+.action h1 {
   color: #fff;
   margin: 0;
   padding: 1em;
+}
+
+.action h1 {
+  padding-bottom: 0.5em;
+  padding-top: 0;
+}
+
+.action-wrap {
+  display: flex;
+}
+
+.action {
+  background: url(../img/action.png);
+  background-size: cover;
+  width: 100%;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action div {
+  flex: 100%;
 }
 
 .circle {
