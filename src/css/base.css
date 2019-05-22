@@ -26,6 +26,8 @@
 
   /* proportions */
   --navbar-height: 2.75rem;
+  --toolbar-height: 2.5rem;
+  --drawer-height: 2.5rem;
   --document-width-medium: 85%;
   --document-width-large: 80%;
 }

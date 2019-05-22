@@ -27,6 +27,12 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar a {
+    color: var(--color-dark);
+  }
+}
+
 .navbar-brand .navbar-item:first-child,
 .navbar-brand .navbar-item:first-child a {
   color: var(--color-light);
