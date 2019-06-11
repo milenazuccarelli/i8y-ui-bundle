@@ -11,6 +11,7 @@
   top: var(--navbar-height);
   z-index: 1;
   padding-right: 3em;
+  padding-left: 3em;
 }
 
 .toolbar a,
