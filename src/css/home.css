@@ -122,7 +122,8 @@ a.btn:hover {
 }
 
 .home .doc,
-.home .list {
+.home .list,
+.page {
   padding: 2rem 1rem 4em;
 }
 
@@ -132,6 +133,11 @@ a.btn:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.page {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* Helpers for different feature cards with nice icons */
