@@ -27,12 +27,22 @@
 
 .card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg-light);
   border-radius: 5px;
-  padding: 1em;
+  padding: 1.5em;
   -webkit-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+}
+
+.card .icon {
+  width: 35%;
+}
+
+.card .icon img {
+  height: 40px;
 }
 
 .card .imageblock img {
@@ -44,9 +54,9 @@
   font-weight: 700;
   color: var(--color-secondary);
   font-family: var(--font-family-display);
+  margin-top: 0;
 }
 
 .more {
-  margin-bottom: auto;
-  align-self: flex-end;
+  margin-top: auto;
 }

@@ -101,6 +101,11 @@ a.btn:hover {
   background-color: var(--color-bg-light-shade);
 }
 
+.home #start {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .home .doc h1 {
   font-size: 1.5rem;
   text-align: center;
@@ -142,6 +147,12 @@ a.btn:hover {
 
 /* Helpers for different feature cards with nice icons */
 
+.feat-wrap {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
 .feat {
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -157,6 +168,10 @@ a.btn:hover {
 
 .cubes {
   background-image: url(../img/cubes.png);
+}
+
+.tower {
+  background-image: url(../img/tower.png);
 }
 
 @media (max-width: 1024px) {
